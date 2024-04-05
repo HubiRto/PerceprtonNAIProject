@@ -1,4 +1,5 @@
 package pl.pomoku;
 
-public class IrisType {
+public enum IrisType {
+    VIRGINICA, SETOSA
 }

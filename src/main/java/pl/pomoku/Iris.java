@@ -1,7 +1,8 @@
+package pl.pomoku;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import pl.pomoku.IrisType;
 
 @Data
 @AllArgsConstructor
@@ -11,5 +12,9 @@ public class Iris {
     private double sepalWidth;
     private double petalLength;
     private double petalWidth;
-    private IrisType irisType;
+    private IrisType type;
+
+    public double[] toDoubleInput() {
+        return new double[]{sepalLength, sepalWidth, petalLength, petalWidth};
+    }
 }
